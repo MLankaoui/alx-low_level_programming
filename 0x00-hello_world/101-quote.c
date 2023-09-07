@@ -1,17 +1,13 @@
-/** the preprocessor directives
- *
- */
+#include <stdio.h>
 #include <unistd.h>
 
-int main (void)
+/**
+ *main - Entry point
+ *
+ *Return: Always 0 (Success)
+ */
+int main(void)
 {
-	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
 	return (0);
 }
-/**
- *
- *
- *printf to printf what inside of it
- *
- * return zero returns zero if the program runs smouthl
- */
