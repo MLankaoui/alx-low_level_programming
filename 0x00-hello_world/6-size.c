@@ -1,12 +1,10 @@
-/* preprocessor directive for our program */
+/*preprocessor directive for our program*/
 #include <stdio.h>	
-
 /**
  * main - our main program function
  *
  * Return : zero (success)
  */
-
 int main(void)
 {
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
