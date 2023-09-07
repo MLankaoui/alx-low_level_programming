@@ -1,9 +1,8 @@
-/*preprocessor directive for our program*/
 #include <stdio.h>	
 /**
- * main - our main program function
+ * main - Entry point
  *
- * Return : zero (success)
+ * Return : Always 0 (Success)
  */
 int main(void)
 {
