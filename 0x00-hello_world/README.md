@@ -1,1 +1,0 @@
-first ALX C project
