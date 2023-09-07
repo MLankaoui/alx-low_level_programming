@@ -1,7 +1,10 @@
-/* preprocessor directive for our program*/
-#include <stdio.h>
+/* preprocessor directive for our program */
+#include <stdio.h>	
+
 /**
  * main - our main program function
+ *
+ * Return : zero (success)
  */
 
 int main(void)
@@ -11,8 +14,5 @@ int main(void)
 	printf("Size of a long int: %zu byte(s)\n", sizeof(long));
 	printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
 	printf("Size of a float: %zu byte(s)\n", sizeof(float));
-
-	return (0); /**
-		      *return zero main that if the program runs smouthly we will see zero
-		      */
-}
+	return (0); 
+i}
