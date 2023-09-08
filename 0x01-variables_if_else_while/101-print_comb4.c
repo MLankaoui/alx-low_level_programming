@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (j = 0 ; j < 10 ; j++)
 		{
-			for (k = 1 ; k < 10 ; k++){
+			for (k = 1 ; k < 10 ; k++)
 			{
 				if (k != j || k != i || j != i)
 				{
@@ -27,8 +27,7 @@ int main(void)
 					putchar(' ');
 				}
 			}
-		}
-	
+		}	
 	}
 
 	putchar('\n');
