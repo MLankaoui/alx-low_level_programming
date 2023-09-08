@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 01 ; i < 88 ; i++)
 	{
-		putchar(i + '0');
+		write(1, 88, i);
 	}
 	putchar('\n');
 	return (0);
