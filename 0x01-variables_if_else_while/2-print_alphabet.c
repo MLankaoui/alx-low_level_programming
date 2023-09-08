@@ -13,5 +13,5 @@ int main(void)
 	for (i=1; i < 20; i++)
 		putchar(alphabet[i]);
 	putchar('\n');
-	return (0)
+	return (0);
 }
