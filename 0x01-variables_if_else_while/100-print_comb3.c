@@ -7,8 +7,7 @@
  */
 int main(void)
 {	
-	int i, last;
-
+	int i;
 
 	for (i = 0 ; i < 88 ; i++)
 	{
