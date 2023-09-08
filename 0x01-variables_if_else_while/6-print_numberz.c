@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -7,12 +8,14 @@
  */
 int main(void)
 {
-    	int n[] = "123456789";
+	char n[] = "0123456789";
 	int i;
 
-	for(i = 0;n[i] != "\0"; i++)
+	for (i = 0; i < 8; i++)
+	{
 		putchar(n[i]);
+	}
 
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
