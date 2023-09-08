@@ -8,6 +8,20 @@
  */
 int main(void)
 {
-	printf("0123456789");
+	int n, N;
+
+	n = 01234;
+	N = 56789;
+	int i;
+
+	for (i = 0 ; i < 5 ; i++)
+	{
+		putchar(n + 'O');
+	}
+	for (i = 0 ; i < 5 ; i++)
+	{
+		putchar(n + 'O');
+	}
+	putchar('\n');
 	return (0);
 }
