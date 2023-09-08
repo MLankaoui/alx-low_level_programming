@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -9,8 +10,10 @@ int main(void)
 {
 	alpha[] = "abcdfghijklmnoprstuvwxyz";
 
-	for(i = 0;alpha[i]i++)
-		putchar(alpha[i])
+	for (i = 0; i < 24 ; i++)
+	{
+		putchar(alpha[i]);
+	}
 	putchar("\n");
 	return (0);
 }
