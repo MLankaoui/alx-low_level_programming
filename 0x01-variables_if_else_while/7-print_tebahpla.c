@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 0; i < 32 ; i++)
 	{
-		putchar[rAlpha[i]];
+		putchar(rAlpha[i]);
 	}
 
 	putchar('\n');
