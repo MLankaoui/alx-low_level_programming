@@ -1,18 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Return: Always 0 (Success)
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	char rAlpha[] = "zyxwvutsrqponmlkjihgfedcba"
-	
+	char rAlpha[] = "zyxwvutsrqponmlkjihgfedcba";
 	int i;
-	for(i = 0; rAlpha[i] != '\0' ; i++)
-		putchar[rAlpha[i]];
 
-	putchar("\n");
-    	return (0);
+	for (i = 0; i < 32 ; i++)
+	{
+		putchar[rAlpha[i]];
+	}
+
+	putchar('\n');
+	return (0);
 }
