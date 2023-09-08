@@ -7,22 +7,21 @@
  */
 int main(void)
 {
-	int i, k;
-
-	for (i = 0; i < 10 ; i++)
+	int i, j;
+	for (i = 0; i < 10; i++)
 	{
-		for (k = 0 ; k < 10 ; k++)
-		{
+		for (j = i + 1; j < 10; j++)
+        	{ 
 			putchar(i + '0');
-			putchar(k + '0');
-			if (!(i != 0 && k == 1) && !(i == 1 && k == 0))
+			putchar(j + '0');
+											            
+			if (!(i == 0 && j == 1) && !(i == 1 && j == 0)) 
 			{
-				putchar(',');
+			       	putchar(',');
 				putchar(' ');
-			}
-		}
-	}
-
+																		                                     }
+		}            
+       	}
 	putchar('\n');
 	return (0);
 }
