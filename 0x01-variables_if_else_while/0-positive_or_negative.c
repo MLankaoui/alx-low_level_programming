@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include <unistd.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
@@ -20,15 +19,15 @@ int main(void)
 
 	if (n > 0)
 	{
-		write(1, n "is positive", 15);
+		printf("%d is positive", n);
 	}
 	else if (n == 0)
 	{
-		write(1, n"is zero", 16);
+		printf("%d is zero", n)i;
 	}
 	else
 	{
-		write(1, n"is negative", 10);
+		printf("%d is negative", n);
 	}
 
 	return (0)
