@@ -8,11 +8,10 @@
  */
 int main(void)
 {
-	int n, N;
+	int n, N, i;
 
 	n = 01234;
 	N = 56789;
-	int i;
 
 	for (i = 0 ; i < 5 ; i++)
 	{
@@ -20,7 +19,7 @@ int main(void)
 	}
 	for (i = 0 ; i < 5 ; i++)
 	{
-		putchar(n + 'O');
+		putchar(N + 'O');
 	}
 	putchar('\n');
 	return (0);
