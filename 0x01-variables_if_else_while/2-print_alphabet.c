@@ -10,9 +10,8 @@ int main(void)
 {
 	char alphabet[30] = "abcdefghijklmnopqrstuvwxyz";
 
-	for(int i = 0;alphabet != "\0";i++)
+	for (int i = 0; alphabet != "\0"; i++)
 		putchar(alphabet[i]);
-	
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
