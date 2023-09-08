@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int n = 0123;
+	int n = "0123";
 	int i;
 
 	for (i = 0; i < 8; i++)
