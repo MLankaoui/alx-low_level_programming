@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char n[] = "0123456789";
+	int n = 0123456789;
 	int i;
 
 	for (i = 0; i < 8; i++)
