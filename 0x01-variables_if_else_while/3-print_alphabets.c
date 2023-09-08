@@ -10,12 +10,12 @@ int main(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	char ALPHABET[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-	for (int i = 0; i < 26 ; i++)
+	int i;
+	for (i = 0; i < 26 ; i++)
 	{
 		putchar(alphabet[i]);
 	}
-	for (int i = 0; i < 26; i++)
+	for (i = 0; i < 26; i++)
 	{
 		putchar(ALPHABET[i]);
 	}
