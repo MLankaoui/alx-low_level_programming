@@ -8,7 +8,7 @@
 int main(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	char ALPHABET[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ$";
+	char ALPHABET[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	for(int i = 0; alphabet[i] != "\0"; i++)
 		putchar(alphabet[i]);
