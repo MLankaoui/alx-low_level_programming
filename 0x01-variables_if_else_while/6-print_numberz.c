@@ -8,12 +8,15 @@
  */
 int main(void)
 {
-	int n = 0123;
+	int n = 1234567;
 	int i;
 
-	for (i = 0; i < 4; i++)
+	int zero = 0;
+
+	putchar(zero);
+	for (i = 0; i < 7; i++)
 	{
-		putchar(n[i]);
+		putchar(n);
 	}
 
 	putchar('\n');
