@@ -9,7 +9,7 @@ int main(void)
 {	
 	int i;
 
-	for (i = 0 ; i < 88 ; i++)
+	for (i = 01 ; i < 88 ; i++)
 	{
 		putchar(i + '0');
 	}
