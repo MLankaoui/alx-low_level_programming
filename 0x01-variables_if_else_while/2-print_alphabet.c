@@ -13,5 +13,5 @@ int main(void)
 	for (int i = 0; alphabet != "\0"; i++)
 		putchar(alphabet[i]);
 	putchar('\n');
-	return (0);
+	return (0)
 }
