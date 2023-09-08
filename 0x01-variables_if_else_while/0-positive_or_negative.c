@@ -31,5 +31,5 @@ int main(void)
 		write(1, n"is negative", 10);
 	}
 
-	return (0);
+	return (0)
 }
