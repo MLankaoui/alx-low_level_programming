@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /* Function prototype */
@@ -12,18 +11,10 @@ int main(void)
 
 void print_alphabet(void)
 {
-    char alpha[] = "abcdefghijkl";
-    char ALPHA[] = "MNOPQRSTUVWXYZ"; // Corrected uppercase letters
-    
-    int i, j;
-
-    for (i = 0; i < 12; i++)
+    char alpha = 'a'; // Add a newline character to separate the output from the shell prompt.
+    while (alpha <= z)
     {
-        _putchar(alpha[i]);
+        _putchar(alpha);
     }
-    for (j = 0; j < 14; j++)
-    {
-        _putchar(ALPHA[j]);
-    }
-    putchar('\n'); // Add a newline character to separate the output from the shell prompt.
+    _putchar('\n');
 }
