@@ -15,15 +15,15 @@ void print_alphabet(void)
     char alpha[] = "abcdefghijkl";
     char ALPHA[] = "MNOPQRSTUVWXYZ"; // Corrected uppercase letters
     
-    int i;
+    int i, j;
 
     for (i = 0; i < 12; i++)
     {
         putchar(alpha[i]);
     }
-    for (i = 0; i < 14; i++)
+    for (j = 0; j < 14; j++)
     {
-        putchar(ALPHA[i]);
+        putchar(ALPHA[j]);
     }
     putchar('\n'); // Add a newline character to separate the output from the shell prompt.
 }
