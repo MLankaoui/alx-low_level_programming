@@ -15,12 +15,17 @@ int main(void)
 
 void print_alphabet(void)
 {
-    char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+    char alpha[] = "abcdefghijkl";
+    char ALPHA[] = "mnopqrstuvwxyz";
     int i;
 
-    for (i = 0 ; i < 26 ; i++)
+    for (i = 0 ; i < 12 ; i++)
     {
         putchar(alpha[i]);
+    }
+    for (i = 0 ; i < 14 ; i++)
+    {
+        putchar(ALPHA[i]);
     }
 
 }
