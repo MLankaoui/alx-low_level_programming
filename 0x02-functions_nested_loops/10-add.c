@@ -1,25 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
-/*
-*main - Entry point
-*
-*Return: Always 0 (Success)
-*/
-int main(void)
+/**
+ * add - adds two integers and returns the result
+ * @a: int to be added to b
+ * @b: int to be added to a
+ * Return: sum of a and b
+ */
+int add(int a, int b)
 {
-    int n;
+	int c;
 
-    n = add(89, 9);
-    printf("%d\n", n);
-    return (0);
-}
+	c = a + b;
 
-int add(int n, int N)
-{
-    
-    int R = n + N;
-
-    return R;
+	return (c);
 }
