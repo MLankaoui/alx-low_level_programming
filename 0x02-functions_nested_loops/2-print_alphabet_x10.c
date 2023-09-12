@@ -1,27 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+/**
+ *print_alphabet_x10 - Entry point
+ *Return: 0
+ */
 
-/*
-*main - Entry point
-*
-*Return: Always 0 (Success)
-*/
-int main (void)
-{   
-    print_alphabet_x10();
-    return (0);
-}
-void print_alphabet_x10(void){
-    
-    int i,j;
-    char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+void print_alphabet_x10(void)
+{
+	int x;
+	char c;
 
-    for (i = 0 ; i < 10 ; i++)
-    {
-        for (j = 0 ; j < 26 ; j++)
-        {
-            putchar(alpha[j]);
-        }putchar('\n');
-    }
+	x = 0;
+
+	while (x < 10)
+	{
+		c = 'a';
+		while (c <= 'z')
+		{
+			_putchar(c);
+			c++;
+		}
+
+		_putchar('\n');
+		x++;
+	}
 }
