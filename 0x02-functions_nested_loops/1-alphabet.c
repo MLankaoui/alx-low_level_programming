@@ -1,14 +1,20 @@
 #include "main.h"
 
-
+/**
+* print_alphabet - Entry point
+* Return: 0
+*/
 
 void print_alphabet(void)
 {
-    char alpha = 'a'; // Add a newline character to separate the output from the shell prompt.
-    while (alpha <= 'z')
-    {
-        _putchar(alpha);
-        alpha++;
-    }
-    _putchar('\n');
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+
+	_putchar('\n');
+
 }
