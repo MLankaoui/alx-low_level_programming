@@ -1,41 +1,36 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
-/*
- * times_table - Prints a times table
+/**
+ * times_table - prints the 9 times table, starting with 0
  */
-void times_table(void);
-
-int main(void)
-{
-    times_table();
-    return (0);
-}
-
 void times_table(void)
 {
-    int i, j;
+	int i, j, k;
 
-    for (i = 0; i < 10; i++)
-    {
-        for (j = 0; j < 10; j++)
-        {
-            if (j == 0) // Don't print ',' before the first number
-            {
-                putchar('0' + i * j); // Calculate and print the product
-            }
-            else
-            {
-                putchar(',');
-                putchar(' ');
-                int product = i * j;
-                if (product < 10) // Add an extra space for single-digit products
-                {
-                    putchar(' '); // Extra space for alignment
-                }
-                printf("%2d", product); // Print the product with two digits
-            }
-        }
-        putchar('\n');
-    }
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; j < 10; j++)
+		{
+			k = j * i;
+			if (j == 0)
+			{
+				_putchar(k + '0');
+			}
+
+			if (k < 10 && j != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(k + '0');
+			} else if (k >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((k / 10) + '0');
+				_putchar((k % 10) + '0');
+			}
+		}
+		_putchar('\n');
+	}
 }
