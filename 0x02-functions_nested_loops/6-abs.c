@@ -1,21 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-int n;
-/*
-*main - Entry point
-*
-*Return: Always 0 (Success)
-*/
-int main (void)
+
+/**
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
+ */
+
+int _abs(int n)
 {
-    
-    int abs_n  = _abs();
-    putchar(abs_n + '0');
-    return (0);
-}
-int _abs(int)
-{
-    int abs_n = abs(n);
-    return abs_n;
+	if (n >= 0)
+	{
+		return (n);
+	}
+
+	return (-n);
 }
