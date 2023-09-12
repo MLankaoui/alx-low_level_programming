@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /*
@@ -7,11 +5,6 @@
 *
 *Return: Always 0 (Success)
 */
-int main(void)
-{
-    jack_bauer();
-    return (0);
-}
 void jack_bauer(void)
 {
     int i, j;
@@ -19,12 +12,12 @@ void jack_bauer(void)
     {
         for (j = 0; j < 60; j++)
         {
-            putchar((i / 10) + '0'); // Print tens digit of hour
-            putchar((i % 10) + '0'); // Print ones digit of hour
-            putchar(':');
-            putchar((j / 10) + '0'); // Print tens digit of minute
-            putchar((j % 10) + '0'); // Print ones digit of minute
-            putchar('\n'); // Newline to separate times
+            _putchar((i / 10) + '0'); // Print tens digit of hour
+            _putchar((i % 10) + '0'); // Print ones digit of hour
+            _putchar(':');
+            _putchar((j / 10) + '0'); // Print tens digit of minute
+            _putchar((j % 10) + '0'); // Print ones digit of minute
+            _putchar('\n'); // Newline to separate times
         }
     }
 }
