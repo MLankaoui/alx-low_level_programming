@@ -1,31 +1,29 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - computes and prints the sum of all the multiples
- * of 3 or 5 below 1024
- * Return: Always 0 (Success)
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ * starting from 00:00 to 23:59
  */
-int main(void)
+void jack_bauer(void)
+
 {
-    unsigned long int sum3, sum5, sum;
-    int i;
+	int i, j;
 
-    sum3 = 0;
-    sum5 = 0;
-    sum = 0;
+	i = 0;
 
-    for (i = 0; i < 1024; ++i)
-    {
-        if ((i % 3) == 0)
-        {
-            sum3 = sum3 + i;
-        }
-        else if ((i % 5) == 0)
-        {
-            sum5 = sum5 + i;
-        }
-    }
-    sum = sum3 + sum5;
-    printf("%lu\n", sum);
-    return (0);  
+	while (i < 24)
+	{
+		j = 0;
+		while (j < 60)
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(':');
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
+			_putchar('\n');
+			j++;
+		}
+		i++;
+	}
 }
