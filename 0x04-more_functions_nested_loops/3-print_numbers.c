@@ -5,17 +5,15 @@
  */
 void print_numbers(void)
 {
-    int num = 0;
+	int num = 0;
 
-    do
-    {
-        _putchar(num + '0');
+	do {
+		_putchar(num + '0');
 
-        if (num == 9)
-        {
-            _putchar('$');
-        }
-
-        num++;
-    } while (num <= 9);
+		if (num == 9)
+		{
+			_putchar('$');
+		}
+		num++;
+	} while (num <= 9);
 }
