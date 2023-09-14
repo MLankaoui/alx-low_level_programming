@@ -16,4 +16,5 @@ void print_numbers(void)
 		}
 		num++;
 	} while (num <= 9);
+	printf('\n');
 }
