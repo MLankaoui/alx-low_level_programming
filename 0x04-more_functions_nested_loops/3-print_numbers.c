@@ -1,5 +1,9 @@
 #include "main.h"
 
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
 /**
  * print_numbers - Prints numbers from 0 to 9 followed by a dollar sign.
  */
