@@ -20,6 +20,5 @@ void print_numbers(void)
             _putchar('$');
             num++;
         }
-    }
-    while (num <= 9);
+    } while (num <= 9);
 }
