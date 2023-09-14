@@ -1,15 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * more_numbers - loop some numbers
  */
-int _putchar(char c)
-{
-    return write(1, &c, 1);
-}
-
 void more_numbers(void)
 {
     int i, j;
