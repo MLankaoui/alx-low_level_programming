@@ -11,7 +11,7 @@ void print_line(int n)
 	{
 		int i;
 
-		for (i = 0 ; i < n ; n++)
+		for (i = 0 ; i < n ; i++)
 			_putchar('_');
 	}
 	else
