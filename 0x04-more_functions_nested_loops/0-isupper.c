@@ -3,15 +3,15 @@
 
 /**
 *  _isupper - Function testing if a character is uppercase or not
-*  @c: takes the value assigne in the main function and give it to this function
-(* 
-*  Description: all what this function is gonna do is just do some test in values passed in the c parameters and see if it in upper case or not
-*  sectio header: this is a header section
-*  Return: 1 (Success)
+*@c: takes the value assigne in the main function and give it to this function
+(*
+*Description: all what this function is gonna do is just
+*section header: this is a header section
+*Return: 1 (Success)
 */
 int _isupper(int c)
 {
-	if (isupper (c) )
+	if (isupper(c))
 	{
 		return (1);
 	}
