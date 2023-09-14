@@ -3,7 +3,8 @@
 /*
  * print_line - print _ n times
  *
- * @n: just argment that takes the number of _
+ * @n: just argment that takes the number of
+ * Description: just a regular function printing _
  */
 void print_line(int n)
 {
@@ -21,5 +22,4 @@ void print_line(int n)
 		}
 		_putchar('\n');
 	}
-	printf('\n');
 }
