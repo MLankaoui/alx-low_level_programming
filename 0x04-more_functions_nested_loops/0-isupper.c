@@ -4,7 +4,7 @@
 /**
 *isUpper - Function testing if a character is uppercase or not
 *
-*isUpper
+*Return: Always 0 (Success)
 */
 int _isupper(int c)
 {
