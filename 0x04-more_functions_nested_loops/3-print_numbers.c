@@ -1,20 +1,17 @@
 #include "main.h"
 
 /**
- * print_numbers - Prints numbers from 0 to 9 followed by a dollar sign.
+ * print_numbers - prints the numbers, from 0 to 9,
+ * followed by a new line
  */
 void print_numbers(void)
 {
-	int num = 0;
+	int i;
 
-	do {
-		_putchar(num + '0');
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
 
-		if (num == 9)
-		{
-			_putchar('$');
-		}
-		num++;
-	} while (num <= 9);
 	_putchar('\n');
 }
