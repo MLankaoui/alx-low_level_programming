@@ -2,12 +2,13 @@
 #include "main.h"
 
 /**
- * _isDigit - function test if the elemnt is a digit (0 through 9)
- * @c: is just taking the value out of c variable wich has been declared earlier in the main function
+ * _isdigit - checks if the element is a digit (0 through 9)
+ * @c: the character to be checked
  * 
- * Description: this function is just a regular function that run some tests in c argument
- * section header: this is just the section header
- * Return: 1 (Success)
+ * Description: This function checks if the provided character is a digit
+ *              (0 through 9).
+ * 
+ * Return: 1 if c is a digit, 0 otherwise (Success)
  */
 int _isdigit(int c)
 {
@@ -20,3 +21,4 @@ int _isdigit(int c)
 		return (0);
 	}
 }
+
