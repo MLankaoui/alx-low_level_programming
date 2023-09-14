@@ -5,17 +5,17 @@
  */
 void print_diagonal(int n)
 {
-	if (!(n <= 0))
+	if (n <= 0)
 	{
-		int i;
-
-		for (i = 0 ; i <= n ; i++)
-		{
-			_putchar('\\');
-		}
+		putchar('\n');
 	}
 	else
 	{
-		_putchar('\n');
+		int i;
+
+		for (i = 0 ; i < n ; i++)
+		{
+			_putchar('_');
+		}
 	}
 }
