@@ -2,9 +2,7 @@
 
 /*
  * print_line - print _ n times
- *
  * @n: just argment that takes the number of
- * Description: just a regular function printing _
  */
 void print_line(int n)
 {
