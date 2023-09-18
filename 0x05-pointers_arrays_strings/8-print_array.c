@@ -18,12 +18,12 @@ void print_array(int *a, int n)
 		{
 			putchar(',');
 			putchar(' ');
-			putchar('\n');
 		}
 		else
 		{
 			putchar('\n');
 		}
 	}
+	putchar('\n');
 
 }
