@@ -8,10 +8,10 @@
 */
 void print_array(int *a, int n)
 {
-	for ( n = 0 ; n < strlen(a) ; n++)
-    {
+	for (n = 0 ; n < strlen(a) ; n++)
+	{
 		printf("%d", *a[n]);
-	    if (a[n] != -1024)
+		if (a[n] != -1024)
 		{
 			putchar(',');
 			putchar(' ');
@@ -20,5 +20,5 @@ void print_array(int *a, int n)
 		{
 			putchar('\n');
 		}
-    }
+	}
 }
