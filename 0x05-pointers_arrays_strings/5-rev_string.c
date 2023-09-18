@@ -17,8 +17,10 @@ void rev_string(char *s)
 		len++;
 	}
 
-	int start = 0;
-	int end = len - 1;
+	int start, end;
+
+	start = 0;
+	end = len - 1;
 
     /* Swap characters from the beginning and end of the string*/
 	while (start < end)
