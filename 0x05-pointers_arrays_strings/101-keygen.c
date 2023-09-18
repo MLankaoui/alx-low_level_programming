@@ -48,13 +48,21 @@ void generateRandomPassword(char *password, int length) {
 
 int main() {
     int passwordLength = 12; /* Change this to the desired password length */
-    char password[passwordLength + 1]; /* +1 for the null terminator */
+    char *password = (char *)malloc((passwordLength + 1) * sizeof(char)); /* +1 for the null terminator */
     
+    if (password == NULL) {
+        fprintf(stderr, "Memory allocation failed\n");
+        return 1;
+    }
+
     srand(time(NULL)); /* Seed the random number generator with current time */
 
     generateRandomPassword(password, passwordLength);
 
     printf("Generated Password: %s\n", password);
 
+    free(password); /* Release the allocated memory */
+
     return 0;
 }
+
