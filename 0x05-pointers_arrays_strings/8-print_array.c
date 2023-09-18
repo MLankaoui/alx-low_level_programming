@@ -9,9 +9,11 @@
 */
 void print_array(int *a, int n)
 {
-	for (n = 0 ; n < 5 ; n++)
+	int i;
+	for (i = 0 ; i < n ; i++)
 	{
-		if (n  != n % 10)
+		printf("%d", a[n]);
+		if (i != n - 1)
 		{
 			putchar(',');
 			putchar(' ');
