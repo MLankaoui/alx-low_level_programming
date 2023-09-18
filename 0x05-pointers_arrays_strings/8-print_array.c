@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdbool.h>
 
 /**
 *print_array - just prints an array
