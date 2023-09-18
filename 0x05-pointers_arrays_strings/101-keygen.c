@@ -2,66 +2,34 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* Function to generate a random uppercase letter */
-char randomUpperCaseLetter() {
-    return 'A' + (rand() % 26);
-}
+/**
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int pass[100];
+	int i, sum, n;
 
-/* Function to generate a random lowercase letter */
-char randomLowerCaseLetter() {
-    return 'a' + (rand() % 26);
-}
+	sum = 0;	
 
-/* Function to generate a random digit */
-char randomDigit() {
-    return '0' + (rand() % 10);
-}
+	srand(time(NULL));
 
-/* Function to generate a random special character (e.g., !, @, #, etc.) */
-char randomSpecialCharacter() {
-    char specialCharacters[] = "!@#$%^&*()-_=+[]{}|;:,.<>?";
-    return specialCharacters[rand() % (sizeof(specialCharacters) - 1)];
-}
+	for (i = 0; i < 100; i++)
+	{
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
+	}
 
-/* Function to generate a random password based on given criteria */
-void generateRandomPassword(char *password, int length) {
-    int i;
-    for (i = 0; i < length; i++) {
-        int choice = rand() % 4;
-        switch (choice) {
-            case 0:
-                password[i] = randomUpperCaseLetter();
-                break;
-            case 1:
-                password[i] = randomLowerCaseLetter();
-                break;
-            case 2:
-                password[i] = randomDigit();
-                break;
-            case 3:
-                password[i] = randomSpecialCharacter();
-                break;
-        }
-    }
-    password[length] = '\0'; /* Null-terminate the password */
-}
-
-int main() {
-    int passwordLength = 15; /* Set the desired password length to 15 */
-    char *password = (char *)malloc((passwordLength + 1) * sizeof(char)); /* +1 for the null terminator */
-    
-    if (password == NULL) {
-        fprintf(stderr, "Memory allocation failed\n");
-        return 1;
-    }
-
-    srand(time(NULL)); /* Seed the random number generator with current time */
-
-    generateRandomPassword(password, passwordLength);
-
-    printf("%s\n", password);
-
-    free(password); /* Release the allocated memory */
-
-    return 0;
+	return (0);
 }
