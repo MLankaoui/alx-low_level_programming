@@ -8,9 +8,10 @@
  */
 int _atoi(char *s)
 {
-    int nb = 0; // Initialize the result variable
-    int sign = 1;   // Initialize the sign variable (positive by default)
-
+    int nb;
+    int sign;   // Initialize the sign variable (positive by default)
+    nb = 0;
+    sign = 1;
     while (*s)
     {
         if (*s == '-')
