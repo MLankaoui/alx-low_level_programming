@@ -1,24 +1,31 @@
-#include "main.h"
-
 /**
-*print_array - just prints an array
-*@a:takes the value of arrays
-*@n:just a value
-*Description: prints an array
-*/
-void print_array(int *a, int n)
+ * print_array - Print an array of integers with commas and a newline
+ * @arr: The array of integers
+ * @n: The number of elements in the array
+ */
+void print_array(const int *arr, int n)
 {
-	for (n = 0 ; n < strlen(a) ; n++)
+	if (n <= 0)
 	{
-		printf("%d", *a[n]);
-		if (a[n] != -1024)
+		return;
+	}
+
+	char buffer[20]; /* Assuming a reasonable size for the buffer*/
+	int len;
+
+	for (int i = 0; i < n; i++)
+	{
+		_itoa(arr[i], buffer, &len);
+		write(1, buffer, len);
+
+		if (i < n - 1)
 		{
-			putchar(',');
-			putchar(' ');
-		}
-		else
-		{
-			putchar('\n');
+			char separator[] = {',', ' '};
+
+			write(1, separator, 2);
 		}
 	}
+
+	char newline = '\n';
+	write(1, &newline, 1);
 }
