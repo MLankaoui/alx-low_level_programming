@@ -7,16 +7,17 @@
 */
 void puts2(char *str)
 {
-	int len = strlen(str);
-	int i;
+	int i = 0;
 
-	for (i = 0 ; i < len ; i++)
-
+	while (str[i] != '\0')
 	{
 		if (i % 2 == 0)
 		{
-			printf("%d", str[i]);
+			putchar(str[i]);
 		}
+		i++;
 	}
-	printf("\n");
+
+	putchar('\n');
+
 }
