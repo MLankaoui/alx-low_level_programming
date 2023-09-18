@@ -47,7 +47,7 @@ void generateRandomPassword(char *password, int length) {
 }
 
 int main() {
-    int passwordLength = 12; /* Change this to the desired password length */
+    int passwordLength = 15; /* Set the desired password length to 15 */
     char *password = (char *)malloc((passwordLength + 1) * sizeof(char)); /* +1 for the null terminator */
     
     if (password == NULL) {
@@ -59,10 +59,9 @@ int main() {
 
     generateRandomPassword(password, passwordLength);
 
-    printf("Generated Password: %s\n", password);
+    printf("%s\n", password);
 
     free(password); /* Release the allocated memory */
 
     return 0;
 }
-
