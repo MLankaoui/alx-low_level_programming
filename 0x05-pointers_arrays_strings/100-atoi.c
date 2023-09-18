@@ -8,9 +8,8 @@
  */
 int _atoi(char *s)
 {
-    int result = 0; // Initialize the result variable
+    int nb = 0; // Initialize the result variable
     int sign = 1;   // Initialize the sign variable (positive by default)
-    int digit;      // Variable to store each digit
 
     while (*s)
     {
@@ -20,11 +19,9 @@ int _atoi(char *s)
         }
         else if (*s >= '0' && *s <= '9')
         {
-            // Convert character to integer and add to result
-            digit = *s - '0';
-            result = result * 10 + sign * digit;
+            nb = nb * 10 + sign * (*s - '0');
         }
-        else if (result != 0)
+        else if (nb != 0)
         {
             // If non-digit characters follow valid digits, break
             break;
@@ -32,5 +29,5 @@ int _atoi(char *s)
         s++;
     }
 
-    return result;
+    return (nb);
 }
