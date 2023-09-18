@@ -9,14 +9,14 @@
 int _atoi(char *s)
 {
     int nb;
-    int sign;   // Initialize the sign variable (positive by default)
+    int sign; 
     nb = 0;
     sign = 1;
     while (*s)
     {
         if (*s == '-')
         {
-            sign *= -1; // Handle negative sign
+            sign *= -1; 
         }
         else if (*s >= '0' && *s <= '9')
         {
@@ -24,7 +24,6 @@ int _atoi(char *s)
         }
         else if (nb != 0)
         {
-            // If non-digit characters follow valid digits, break
             break;
         }
         s++;
