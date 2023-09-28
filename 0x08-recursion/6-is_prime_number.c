@@ -1,38 +1,37 @@
-#include "main.h"
-
 /**
- * _sqrt_recursion - Calculates the natural square root of a number.
- * @n: The number for which to calculate the square root.
+ * is_prime - checks if a number is prime recursively
+ * @n: the number to check
+ * @m: the divisor to check
  *
- * Return: The natural square root of n, or -1 if it does not have one.
+ * Return: 0 if not prime, 1 if prime
  */
-int _sqrt_recursion(int n)
+int is_prime(int n, int m)
 {
-    if (n < 0)
-    {
-        return -1; // Negative numbers don't have a natural square root
-    }
-
-    return _sqrt_helper(n, 0); // Call the helper function with initial guess 0
+	if (m == 1)
+	{
+		return (1);
+	}
+	if (n <= 1 || (n % m == 0 && m > 1))
+	{
+		return (0);
+	}
+	else
+	{
+		return (is_prime(n, m - 1));
+	}
 }
 
 /**
- * _sqrt_helper - Helper function to calculate square root recursively.
- * @n: The number for which to calculate the square root.
- * @guess: The current guess for the square root.
+ * is_prime_number - checks if a number is prime
+ * @n: the number to check
  *
- * Return: The natural square root of n, or -1 if it does not have one.
+ * Return: 1 if prime, 0 otherwise
  */
-int _sqrt_helper(int n, int guess)
+int is_prime_number(int n)
 {
-    if (guess * guess == n)
-    {
-        return guess; // Found the square root
-    }
-    else if (guess * guess > n)
-    {
-        return -1; // n doesn't have a natural square root
-    }
-
-    return _sqrt_helper(n, guess + 1); // Try the next guess
+	if (n < 2)
+	{
+		return (0);
+	}
+	return (is_prime(n, n - 1));
 }
