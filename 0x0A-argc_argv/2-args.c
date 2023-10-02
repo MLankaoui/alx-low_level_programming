@@ -31,6 +31,6 @@ int main(int argc, char *argv[])
 		}
 		putchar('\n');
 	}
-
+    putchar('\n');
 	return (0);
 }
