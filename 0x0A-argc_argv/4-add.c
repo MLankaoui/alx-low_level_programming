@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
- * @argc: The number of command-line arguments
- * @argv: An array of strings containing the command-line arguments
- *
- * Return: 0 on success, 1 on error
- */
+* main - Entry point of the program
+* @argc: The number of command-line arguments
+* @argv: An array of strings containing the command-line arguments
+*
+* Return: 0 on success, 1 on error
+*/
 int main(int argc, char *argv[])
 {
 	int sum = 0, i, num;
 
 	if (argc == 1)
 	{
-		printf("0\n");
+		putchar('0');
+		putchar('\n');
 		return (0);
 	}
 
