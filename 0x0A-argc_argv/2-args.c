@@ -30,7 +30,6 @@ int main(int argc, char *argv[])
 			putchar(argv[i][j]);
 		}
 		putchar('\n');
-	}
-    putchar('\n');
+    }
 	return (0);
 }
