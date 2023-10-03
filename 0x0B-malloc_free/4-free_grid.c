@@ -1,22 +1,44 @@
 #include "main.h"
 
 /**
-* free_grid - Free the memory of a 2D grid.
-* @grid: Pointer to the 2D grid to be freed.
-* @height: Height (number of rows) of the grid.
+* alloc_grid - nested loop to make grid
+* @width: width input
+* @height: height input
+* Return: pointer to 2 dim. array
 */
-void free_grid(int **grid, int height)
+int **alloc_grid(int width, int height)
 {
-	if (grid == NULL)
+	int **mee;
+
+	int x, y;
+
+	if (width <= 0 || height <= 0)
+		return (NULL);
+
+	mee = malloc(sizeof(int *) * height);
+
+	if (mee == NULL)
+		return (NULL);
+
+	for (x = 0; x < height; x++)
 	{
-		return;
+		mee[x] = malloc(sizeof(int) * width);
+
+		if (mee[x] == NULL)
+		{
+			for (; x >= 0; x--)
+				free(mee[x]);
+
+			free(mee);
+			return (NULL);
+		}
 	}
 
-	for (int i = 0; i < height; i++)
+	for (x = 0; x < height; x++)
 	{
-
-		free(grid[i]);
+		for (y = 0; y < width; y++)
+			mee[x][y] = 0;
 	}
 
-	free(grid);
+	return (mee);
 }
