@@ -11,15 +11,13 @@ void _puts_recursion(char *s)
 {
 
 	/* Base condition for the recursive function */
-	if (*s == '\0')
+	if (*s != '\0')
 	{
-		return;
-	}
-
-	/*
+		/*
 	* Print the current character of the string.
 	* Then, make a recursive call to print the rest of the string.
 	*/
 	_putchar(*s);
 	_puts_recursion(s + 1);
+	}
 }
