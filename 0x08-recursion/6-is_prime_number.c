@@ -1,26 +1,37 @@
-#include "main.h"
 /**
-* is_prime_number - Checks if a number is a prime number
-* @n: The number to be checked
-*
-* Description: This function checks whether the given integer 'n' is a prime
-* number or not.
-*
-* Return: 1 if 'n' is a prime number, 0 otherwise.
-*/
-int is_prime_number(int n)
+ * is_prime - checks if a number is prime recursively
+ * @n: the number to check
+ * @m: the divisor to check
+ *
+ * Return: 0 if not prime, 1 if prime
+ */
+int is_prime(int n, int m)
 {
-	if (n <= 1)
-	{
-		return (0);
-	}
-	if (n % 1 == 0 && n % n == 0)
+	if (m == 1)
 	{
 		return (1);
 	}
-
-	else if (n % 1 != 0 || n % n != 0)
+	if (n <= 1 || (n % m == 0 && m > 1))
 	{
 		return (0);
 	}
+	else
+	{
+		return (is_prime(n, m - 1));
+	}
+}
+
+/**
+ * is_prime_number - checks if a number is prime
+ * @n: the number to check
+ *
+ * Return: 1 if prime, 0 otherwise
+ */
+int is_prime_number(int n)
+{
+	if (n < 2)
+	{
+		return (0);
+	}
+	return (is_prime(n, n - 1));
 }
