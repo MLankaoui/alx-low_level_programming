@@ -9,6 +9,10 @@
 */
 void _puts_recursion(char *s)
 {
+	if (*s == 0)
+	{
+		return (0);
+	}
 	/* Base condition for the recursive function */
 	if (*s == '\0')
 	{
