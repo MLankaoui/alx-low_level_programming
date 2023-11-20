@@ -24,7 +24,7 @@ char *_strdup(char *str)
 		length++;
 	}
 
-	duplic = malloc(length * sizeof(char));
+	duplic = malloc((length + 1) * sizeof(char));
 	i = 0;
     /*to have the copy of str in duplic*/
 	while (str[i] != '\0')
