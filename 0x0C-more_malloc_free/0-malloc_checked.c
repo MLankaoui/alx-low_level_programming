@@ -8,7 +8,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	b = malloc(strlen(b) * 4);
+	b = malloc(strlen(b) * sizeof(unsigned int));
 
 	if (b == NULL)
 	{
