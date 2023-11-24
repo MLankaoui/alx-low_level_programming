@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		while (s1[i] != '\0')
 		{
 			s1[j] = s2[j];
-			i++;
+			j++;
 		}
 	}
 	tmp = malloc(strlen(s1) + 1);
