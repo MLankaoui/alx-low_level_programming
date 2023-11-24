@@ -1,19 +1,19 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * description : function that allocate memory using malloc
- * 
- * malloc_checker - function that allocate memory using malloc
- * @b : takes a unsigned int from main function as a parameter
- * return : nothing
+ * *malloc_checked - allocates memory using malloc
+ * @b: number of bytes to allocate
+ *
+ * Return: a pointer to the allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
-	void* c = malloc(b);
+	void *ptr;
 
-	if (c == NULL)
-	{
+	ptr = malloc(b);
+
+	if (ptr == NULL)
 		exit(98);
-	}
 
-	return (c);
+	return (ptr);
 }
