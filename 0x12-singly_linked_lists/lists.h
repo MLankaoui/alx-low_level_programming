@@ -7,4 +7,11 @@
 
 size_t print_list(const list_t *h);
 
+
+typedef struct Node {
+    int data;            
+    struct Node* next;
+} list_t;
+
+
 #endif
