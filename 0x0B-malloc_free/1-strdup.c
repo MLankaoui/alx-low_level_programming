@@ -8,12 +8,18 @@
 */
 char *_strdup(char *str)
 {
+
+
 	int length;
 
 	char *dup;
 
 	int i;
 
+	if (*str == NULL)
+	{
+		return (NULL);
+	}
 	length = 0;
 
 	while (str[length] != '\0')
