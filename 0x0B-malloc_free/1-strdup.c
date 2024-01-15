@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _strdup - Duplicates a string in memory.
- * @str: The string to be duplicated.
- *
- * Return: If str is NULL or if memory allocation fails, returns NULL;
- * otherwise, returns a pointer to the duplicated string.
- */
+* _strdup - Duplicates a string in memory.
+* @str: The string to be duplicated.
+*
+* Return: If str is NULL or if memory allocation fails, returns NULL;
+* otherwise, returns a pointer to the duplicated string.
+*/
 char *_strdup(char *str)
 {
 	int length;
@@ -34,4 +34,6 @@ char *_strdup(char *str)
 	}
 
 	return (dup);
+
+	free(dup);
 }
