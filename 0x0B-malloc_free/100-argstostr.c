@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 		}
 	}
 
-	ptr = (char *)malloc(sizeof(char) * total_length);
+	ptr = (char *)malloc(sizeof(char) * total_length + 1);
 	if (ptr == NULL)
 	{
 		return (NULL); /* Memory allocation failed */
