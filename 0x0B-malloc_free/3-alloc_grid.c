@@ -9,7 +9,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **grid;
+	int **grid;/*2D array*/
 	int i, j;
 
 	if (width <= 0 || height <= 0)
@@ -25,6 +25,7 @@ int **alloc_grid(int width, int height)
 		grid[i] = (int *)malloc(width * sizeof(int));
 		if (grid[i] == NULL)
 		{
+			/*if a failure just free the previous allocated memory*/
 			for (j = 0; j < i; j++)
 				free(grid[j]);
 			free(grid);
